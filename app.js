@@ -55,12 +55,36 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
+            const category = e.target.dataset.category;
+
+            // Update active states
             document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
             document.querySelectorAll('.mobile-nav-link').forEach(l => l.classList.remove('active'));
-            const text = e.target.textContent;
             document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(l => {
-                if (l.textContent === text) l.classList.add('active');
+                if (l.dataset.category === category) l.classList.add('active');
             });
+
+            // Filter cards
+            document.querySelectorAll('.story-card, .opinion-card, .video-card').forEach(card => {
+                const cardCategory = card.dataset.category;
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = '';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(10px)';
+                    setTimeout(() => { card.style.display = 'none'; }, 200);
+                }
+            });
+
+            // Show/hide sections based on content
+            document.querySelectorAll('.section-divider').forEach(d => {
+                if (category === 'all') {
+                    d.style.display = '';
+                }
+            });
+
             mobileMenu.classList.remove('active');
         });
     });

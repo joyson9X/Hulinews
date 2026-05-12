@@ -47,10 +47,10 @@
                 <span class="logo-huli">huli</span><span class="logo-news">news</span>
             </div>
             <nav class="main-nav" id="main-nav">
-                <a href="#" class="nav-link active">Home</a>
-                <a href="#" class="nav-link">Education</a>
-                <a href="#" class="nav-link">Sports</a>
-                <a href="#" class="nav-link">Summer</a>
+                <a href="#" class="nav-link active" data-category="all">Home</a>
+                <a href="#" class="nav-link" data-category="education">Education</a>
+                <a href="#" class="nav-link" data-category="sports">Sports</a>
+                <a href="#" class="nav-link" data-category="summer">Summer</a>
             </nav>
             <div class="header-actions">
                 <span class="header-date" id="header-date"></span>
@@ -86,10 +86,10 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu-inner">
-            <a href="#" class="mobile-nav-link active">Home</a>
-            <a href="#" class="mobile-nav-link">Education</a>
-            <a href="#" class="mobile-nav-link">Sports</a>
-            <a href="#" class="mobile-nav-link">Summer</a>
+            <a href="#" class="mobile-nav-link active" data-category="all">Home</a>
+            <a href="#" class="mobile-nav-link" data-category="education">Education</a>
+            <a href="#" class="mobile-nav-link" data-category="sports">Sports</a>
+            <a href="#" class="mobile-nav-link" data-category="summer">Summer</a>
         </div>
     </div>
 
@@ -99,7 +99,7 @@
         <section class="hero-section" id="hero-section">
             <div class="hero-grid">
                 <div class="hero-main">
-                    <a href="article.html" class="story-card hero-card">
+                    <a href="article.html" class="story-card hero-card" data-category="education">
                         <div class="card-image hero-image">
                             <img src="RANK 1 in SSLC.png" alt="Maayan Vaz - Rank 1 in SSLC" class="hero-img">
                             <span class="card-badge">BREAKING</span>
@@ -113,7 +113,7 @@
                     </a>
                 </div>
                 <div class="hero-side">
-                    <a href="article-jessica.html" class="story-card side-card">
+                    <a href="article-jessica.html" class="story-card side-card" data-category="education">
                         <div class="card-image side-image">
                             <img src="RANK 1 in SSLC (1).png" alt="Jessica D Almeida - CBSE Results" class="side-img">
                         </div>
@@ -123,13 +123,13 @@
                             <span class="card-time">30m ago</span>
                         </div>
                     </a>
-                    <div class="story-card side-card">
+                    <div class="story-card side-card" data-category="sports">
                         <div class="card-image side-image">
                             <div class="placeholder-img gradient-3"></div>
                         </div>
                         <div class="card-body">
-                            <span class="card-tag">World</span>
-                            <h2 class="card-title side-title">World News Story Headline Placeholder</h2>
+                            <span class="card-tag">Sports</span>
+                            <h2 class="card-title side-title">Sports News Coming Soon</h2>
                             <span class="card-time">3 hours ago</span>
                         </div>
                     </div>
@@ -145,29 +145,29 @@
         <!-- Stories Grid -->
         <section class="stories-section" id="stories-section">
             <div class="stories-grid">
-                <div class="story-card grid-card" id="story-1">
+                <div class="story-card grid-card" id="story-1" data-category="education">
                     <div class="card-image grid-image"><div class="placeholder-img gradient-4"></div></div>
-                    <div class="card-body"><span class="card-tag">Politics</span><h3 class="card-title grid-title">Politics News Headline</h3><span class="card-time">4h ago</span></div>
+                    <div class="card-body"><span class="card-tag">Education</span><h3 class="card-title grid-title">Education News Headline</h3><span class="card-time">4h ago</span></div>
                 </div>
-                <div class="story-card grid-card" id="story-2">
+                <div class="story-card grid-card" id="story-2" data-category="sports">
                     <div class="card-image grid-image"><div class="placeholder-img gradient-5"></div></div>
-                    <div class="card-body"><span class="card-tag">Business</span><h3 class="card-title grid-title">Business News Headline</h3><span class="card-time">5h ago</span></div>
+                    <div class="card-body"><span class="card-tag">Sports</span><h3 class="card-title grid-title">Sports News Headline</h3><span class="card-time">5h ago</span></div>
                 </div>
-                <div class="story-card grid-card" id="story-3">
+                <div class="story-card grid-card" id="story-3" data-category="summer">
                     <div class="card-image grid-image"><div class="placeholder-img gradient-6"></div></div>
-                    <div class="card-body"><span class="card-tag">Science</span><h3 class="card-title grid-title">Science & Tech Headline</h3><span class="card-time">6h ago</span></div>
+                    <div class="card-body"><span class="card-tag">Summer</span><h3 class="card-title grid-title">Summer News Headline</h3><span class="card-time">6h ago</span></div>
                 </div>
-                <div class="story-card grid-card" id="story-4">
+                <div class="story-card grid-card" id="story-4" data-category="education">
                     <div class="card-image grid-image"><div class="placeholder-img gradient-7"></div></div>
-                    <div class="card-body"><span class="card-tag">Entertainment</span><h3 class="card-title grid-title">Entertainment Headline</h3><span class="card-time">7h ago</span></div>
+                    <div class="card-body"><span class="card-tag">Education</span><h3 class="card-title grid-title">Education Update Headline</h3><span class="card-time">7h ago</span></div>
                 </div>
-                <div class="story-card grid-card" id="story-5">
+                <div class="story-card grid-card" id="story-5" data-category="sports">
                     <div class="card-image grid-image"><div class="placeholder-img gradient-8"></div></div>
-                    <div class="card-body"><span class="card-tag">Climate</span><h3 class="card-title grid-title">Climate News Headline</h3><span class="card-time">8h ago</span></div>
+                    <div class="card-body"><span class="card-tag">Sports</span><h3 class="card-title grid-title">Sports Update Headline</h3><span class="card-time">8h ago</span></div>
                 </div>
-                <div class="story-card grid-card" id="story-6">
+                <div class="story-card grid-card" id="story-6" data-category="summer">
                     <div class="card-image grid-image"><div class="placeholder-img gradient-1"></div></div>
-                    <div class="card-body"><span class="card-tag">Travel</span><h3 class="card-title grid-title">Travel News Headline</h3><span class="card-time">9h ago</span></div>
+                    <div class="card-body"><span class="card-tag">Summer</span><h3 class="card-title grid-title">Summer Update Headline</h3><span class="card-time">9h ago</span></div>
                 </div>
             </div>
         </section>
